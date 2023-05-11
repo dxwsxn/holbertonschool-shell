@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir basics/ welcome/to/school
+mkdir welcome/to/school basics/
