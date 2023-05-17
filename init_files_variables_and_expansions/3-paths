@@ -1,2 +1,2 @@
 #!/bin/bash
-path=$(printenv PATH)
+echo $(('echo $PATH | grep -o "w:/" | wc -l' +1))
