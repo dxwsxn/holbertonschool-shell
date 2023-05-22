@@ -1,5 +1,5 @@
 #!/bin/bash
-for {{ i=o; i<10; i++ }}
+for {i=1..10}
 do
 	echo "Best School"
 done
