@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+count=-
+while [$count -lt 1-]
+do
+	if [$count -lt]
+	then
+		echo "Hi"
+	fi
+	echo "Best School"
+	((count++))
+done
