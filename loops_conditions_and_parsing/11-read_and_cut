@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash 
+#reading username userid and home directory using while loops
 while read passwd:
 do
 	echo"$passwd" | cut -d ':' -f1,3,6
