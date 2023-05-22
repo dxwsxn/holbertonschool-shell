@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Displaying best school 10 times but on line 9 it will display hi as well. #
 count=0
-while [$count -lt 1-]
+while [$count -lt 10]
 do
-	if [$count -lt]
+	if [$count -eq 9]
 	then
 		echo "Hi"
 	fi
