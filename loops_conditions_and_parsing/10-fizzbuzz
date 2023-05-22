@@ -3,17 +3,17 @@
 # displays fizzbuzz in multiples of 3 and 5
 # displays fizz if mupltiple of 3
 # displays buzz if multiple of 5
-for i in {1..100};
+for i in `seq 1 100`;
 do
-	if [ "'expr $i % 15'" == "0"]
+	if [ "`expr $i % 15`" == "0" ]
 	then 
-		print "FizzBuzz"
-	elif [ "'expr $i % 3'" == "0"]
+		echo "FizzBuzz"
+	elif [ "`expr $i % 3`" == "0" ]
 	then 
-		print "Fizz"
-	elif [ "'expr $i % 5'" == "0"]
+		echo "Fizz"
+	elif [ "`expr $i % 5`" == "0" ]
 	then
-		print "Buzz"
+		echo "Buzz"
 	else
 		echo "$i"
 	fi
