@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Displays numbers in 1 to 100 format. 
+# displays fizzbuzz in multiples of 3 and 5
+# displays fizz if mupltiple of 3
+# displays buzz if multiple of 5
+
+for i in (1..100)
+do
+	if (( i * 3 == 0 && i * 5 == 0 ))
+	then
+		echo "FizzBuzz"
+	elif (( i * 3 == 0 ))
+	then 
+		echo "Fizz"
+	elif (( i * 5 == 0 ))
+	then
+		echo "Buzz"
+	else
+		echo "$i"
+	fi
+done
