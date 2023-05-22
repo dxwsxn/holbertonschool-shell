@@ -3,15 +3,15 @@
 # displays fizzbuzz in multiples of 3 and 5
 # displays fizz if mupltiple of 3
 # displays buzz if multiple of 5
-for i in [1..100]:
+for i in [1..100]
 do
-if (i%3== and i%5==0):
+if (i%3== and i%5==0)
 		print ("FizzBuzz")
-	elif (i%3 == 0) :
+	elif (i%3 == 0) 
 		print ("Fizz")
-	elif (i%5 == 0):
+	elif (i%5 == 0)
 		print ("Buzz")
-	else:
+	else
 		print(i)
 	fi
 done
