@@ -3,11 +3,9 @@
 # displays fizzbuzz in multiples of 3 and 5
 # displays fizz if mupltiple of 3
 # displays buzz if multiple of 5
-unset i
 
 while [ $(( i += 1 )) ] 
 do
-	echo -n "$i: "
 	( [ $((i % 15 )) -eq 0 ] && echo FizzBuzz ) ||
 	( [ $((i % 3 )) -eq 0 ] && echo Fizz ) ||
 	( [ $((i % 5 )) -eq 0 ] && echo Buzz ) ||
