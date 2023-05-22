@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# this script displays best school 10 times using until loops #
+i=0
+until [ $i -eq 10]
+do 
+	echo "Best School"
+	(( i++ ))
+done
