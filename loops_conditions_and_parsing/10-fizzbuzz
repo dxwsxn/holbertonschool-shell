@@ -3,18 +3,14 @@
 # displays fizzbuzz in multiples of 3 and 5
 # displays fizz if mupltiple of 3
 # displays buzz if multiple of 5
-for ((i=1;i<100;i++)): 
+unset i
+
+while [ $(( i += 1 )) ] 
 do
-	if [ $(($i % 5)) ]
-	then
-		echo Fizzbuzz
-	elif [ $(($i % 3)) ]
-	then
-		echo Fizz
-	elif [ $(($i % 5)) ]
-	then 
-		echo Buzz
-	else
-		echo $i
-	fi
+	echo -n "$i: "
+	( [ $((i % 15 )) -eq 0 ] && echo FizzBuzz ) ||
+	( [ $((i % 3 )) -eq 0 ] && echo Fizz ) ||
+	( [ $((i % 5 )) -eq 0 ] && echo Buzz ) ||
+	echo $i
+	sleep 1
 done
