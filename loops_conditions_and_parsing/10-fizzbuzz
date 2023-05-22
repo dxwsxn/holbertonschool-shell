@@ -3,7 +3,7 @@
 # displays fizzbuzz in multiples of 3 and 5
 # displays fizz if mupltiple of 3
 # displays buzz if multiple of 5
-for i in(1..100):
+for i in [1..100]:
 do
 if (i%3== and i%5==0):
 		print ("FizzBuzz")
