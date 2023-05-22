@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 echo 'File Name:'
 read file_name
 touch $file_name | echo -e "#!/bin/bash\n" > $file_name
