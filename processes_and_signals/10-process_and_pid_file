@@ -7,9 +7,10 @@ while [ "$i" -gt 0 ]
 do 
 	if [ "$i" -eq 1 ]
 	then
-		echo -e '#!/usr/bin/env bash\nprep -f myscript.pid l' > /var/run/myscript.pid
+		echo -e '#!/usr/bin/env bash\n pgrep -f myscript.pid -l' > /var/run/myscript.pid
 	elif [ "$i" -eq 2 ]
-		them chmod u+x /var/run/myscript.pid
+		then
+		       	chmod u+x /var/run/myscript.pid
 	fi
 	echo "To infinity and beyond"
 	i=$((i+1))
