@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# comments
 trap "echo I am invinceable" SIGTERM
 while :
 do
