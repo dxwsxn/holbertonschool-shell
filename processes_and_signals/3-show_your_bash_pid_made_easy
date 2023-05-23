@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# pid for bash but ez
+pgrep -w bash
