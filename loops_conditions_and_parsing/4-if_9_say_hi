@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 # Displaying best school 10 times but on line 9 it will display hi as well. #
 i=0
-until [ "$i" -gt 9 ]
-.do
+while [ "$i" -lt 10 ]
+do
 	echo "Best School"
-	i+$((i+1))
+	i=$((i+1))
+	if [ "$i" -eq 9 ]
+	then echo "Hi"
+	fi
 done
+
