@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#killing without kill and kill all
+pkill "$(grep -f ./7-highlander)"
