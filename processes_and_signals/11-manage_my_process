@@ -14,13 +14,13 @@ stop)
 restart)
         kill "$(cat var/run/my_process.pid)"
 	rm "/var/run/my_process.pid"
-	./manage_my_process
+	./manage_my_proces &s
 	echo "$!" > "/var/run/my_process.pid"
 	echo "manage_my_process restarted"
-	;;
+	;; 
 *)
 	echo "Usage: manage_my_process {start|stop|restart}"
 	exit 1
 	;;
 esac
-exit 
+exit  
