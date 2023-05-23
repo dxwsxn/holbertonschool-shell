@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# scribbling many memes
+trap "echo Y U no love me?!" SIGINT
+trap "echo I hate the kill command; rm /var/run/myscript.pid; exit" SIGQUIT SIGTERM
+i=1
+while [ "$i" -gt 0 ]
+do 
+	if [ "$i" -eq 1 ]
+	then
+		echo -e '#!/usr/bin/env bash\nprep -f myscript.pid l' > /var/run/myscript.pid
+	elif [ "$i" -eq 2 ]
+		them chmod u+x /var/run/myscript.pid
+	fi
+	echo "To infinity and beyond"
+	i=$((i+1))
+	sleep 2
+done
+
