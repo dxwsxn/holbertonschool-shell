@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# loops 1-10 #
 count=9
 while [ $count -lt 10 ]
 do

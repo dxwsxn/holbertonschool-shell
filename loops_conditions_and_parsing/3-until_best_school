@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# displays best school using while loops #
 i=0
 until [ $i -eq 10 ]
 do

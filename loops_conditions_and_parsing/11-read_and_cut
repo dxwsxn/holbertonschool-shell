@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# reads usrname and uid in home directory #
 while
 	read -r passwd;
 do
